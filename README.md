@@ -1,1 +1,1 @@
-# grapthql-study
+# Flask with GraphQL with Strawberry

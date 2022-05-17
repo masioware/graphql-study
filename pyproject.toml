@@ -8,9 +8,15 @@ authors = ["masioware <marcioedumartinez@gmail.com>"]
 python = "^3.10"
 Flask = "^2.1.2"
 strawberry-graphql = "^0.112.0"
+Flask-SQLAlchemy = "^2.5.1"
 
 [tool.poetry.dev-dependencies]
 httpie = "^3.2.1"
+autopep8 = "^1.6.0"
+flake8 = "^4.0.1"
+
+[tool.poetry.scripts]
+create-db = "scripts:create_database"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

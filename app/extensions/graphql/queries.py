@@ -1,8 +1,5 @@
-import strawberry
+from app.models.user import User
 
-@strawberry.type
-class Query:
-    @strawberry.field
-    def hello(name: str) -> str:
-        return f"Hello {name}"
 
+def show_all_users():
+    return User.query.all()
